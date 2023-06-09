@@ -493,6 +493,7 @@ game.setDialogTextColor(12)
 music.setVolume(20)
 // walking direction animation
 forever(function () {
+    music.play(music.stringPlayable("A F E F D G E F ", 120), music.PlaybackMode.LoopingInBackground)
     scene.cameraFollowSprite(mySprite)
     controller.moveSprite(mySprite)
     if (controller.right.isPressed()) {
